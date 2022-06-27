@@ -1,12 +1,5 @@
-function Rating(){
-    this.count=0;
-    this.sum=0;
-    this.average=0;
-}
-
-
 let collect_ratings = function(){
-    let ratings = Rating();
+    const ratings = {'count':0, 'sum':0, 'average':0 };
     let rating = 0;
     const elements = document.querySelectorAll(".ratings");
     
