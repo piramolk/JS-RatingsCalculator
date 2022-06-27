@@ -8,7 +8,7 @@ function Rating(){
 let collect_ratings = function(){
     let ratings = Rating();
     let rating = 0;
-    const elements = document.querySelectorAll(type="ratings");
+    const elements = document.querySelectorAll(".ratings");
     
     elements.forEach(function(element){
         rating = parseInt(element.id.replace("star",""));
