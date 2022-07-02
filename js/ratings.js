@@ -8,7 +8,8 @@ let collect_ratings = function(){
         ratings.count += parseInt(element.value);
         ratings.sum += parseInt(element.value)*rating;
     })
-    if(ratings.count!=0){
-        ratings.average = sum/count;
+    if(ratings.count!==0){
+        ratings.average = ratings.sum/ratings.count;
     }
+    return ratings;
 }
