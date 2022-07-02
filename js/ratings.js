@@ -13,3 +13,7 @@ let collect_ratings = function(){
     }
     return ratings;
 }
+
+document.addEventListener('change',()=> {
+    const ratings = collect_ratings();
+});
